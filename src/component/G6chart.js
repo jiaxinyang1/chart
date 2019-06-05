@@ -5,6 +5,10 @@ import Hierarchy from '@antv/hierarchy';
 class G6chart extends Component {
     constructor(props) {
         super(props);
+        this.state = {  
+            select_list:new Set()
+
+        }
     }
     data = {
         "name": "Modeling Methods",
@@ -193,7 +197,7 @@ class G6chart extends Component {
     }
     render() {
         return (
-            <div id="mountNode" ref="container">
+            <div id="mountNode" ref="container"     >
 
             </div>
         );
